@@ -4,7 +4,7 @@ import model.Sneaker;
 
 public class FootwareFactory {
 
-    public Footware create(String type, int size){
+    public static Footware create(String type, int size){
         if(type.equals("sneaker")){
             return new Sneaker(size);
         }else return new HighHeels(size);

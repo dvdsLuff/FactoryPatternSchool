@@ -18,4 +18,11 @@ public class HighHeels implements Footware {
 
     }
 
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
 }
