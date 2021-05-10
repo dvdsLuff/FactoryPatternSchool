@@ -11,7 +11,7 @@ public class Sneaker implements Footware {
 
     }
 
-
+    @Override
     public int getSize() {
         return size;
     }

@@ -13,16 +13,16 @@ public class HighHeels implements Footware {
 
 
 
-
+    @Override
     public int getSize() {
         return size;
     }
-
+    @Override
     public void setSize(int size) {
         this.size = size;
     }
 
-    @Override
+   @Override
     public int getSpeed() {
         return speed;
     }
