@@ -2,7 +2,11 @@ package model;
 
 public interface Footware {
 
-   Footware create(int size);
+   int getSize();
+   void setSize(int size);
+   int getSpeed();
+
+
 
 
 }

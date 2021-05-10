@@ -3,20 +3,16 @@ package model;
 public class HighHeels implements Footware {
 
     private int size;
+    private int speed;
 
-    public HighHeels(int size) {
+    public HighHeels(int size, int speed) {
         this.size = size;
+        this.speed = speed;
 
     }
 
 
 
-    @Override
-    public Footware create(int size) {
-        return new HighHeels(size);
-
-
-    }
 
     public int getSize() {
         return size;
@@ -24,5 +20,18 @@ public class HighHeels implements Footware {
 
     public void setSize(int size) {
         this.size = size;
+    }
+
+    @Override
+    public int getSpeed() {
+        return speed;
+    }
+
+    @Override
+    public String toString() {
+        return "High heels, stylish and classy or drunken and thrashy{" +
+                "size=" + size +
+                ", speed=" + speed +
+                '}';
     }
 }
