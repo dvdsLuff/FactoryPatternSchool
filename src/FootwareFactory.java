@@ -6,11 +6,11 @@ public class FootwareFactory {
 
 
 
-    public static Footware create(String type, int size){
+    public static Footware create(int type, int size){
         int sneakerSpeed=7;
         int highHeelsSpeed=3;
 
-        if(type.equals("sneaker")){
+        if(type==2){
             return new Sneaker(size,sneakerSpeed);
         }else return new HighHeels(size,highHeelsSpeed);
         }
